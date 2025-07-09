@@ -34,6 +34,11 @@ Specifies the TCP port on which the SQL server is expected to be listening.
 Defaults to the value of the environment variable OPENDMARC_PORT, or 3306
 if the environment variable is not set.
 .TP
+.I --dbssl
+Specifies to use SSL/TLS to connect to SQL server.  Defaults to the value
+of the environment variable OPENDMARC_SSL or false if the environment
+variable is not set.
+.TP
 .I --dbuser=user
 Specifies the SQL user to be used to access the database.  Defaults to
 the value of the environment variable OPENDMARC_USER, or "opendmarc" if
